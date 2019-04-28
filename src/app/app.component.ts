@@ -6,11 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @Input() page: string;
+  page: string = 'recipes';
 
   title = 'course-project-basics';
-
-  setPage($event) {
-    this.page = $event;
-  }
 }
